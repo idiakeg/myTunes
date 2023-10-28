@@ -45,7 +45,8 @@ section {
 
 .music_section_container,
 .movies_and_tv_container,
-.gift_card_container {
+.gift_card_container,
+.footer_section_container {
 	padding: 3rem 0;
 }
 
@@ -243,6 +244,53 @@ nav {
 	margin: 0.8rem 0;
 }
 
+/* =====Footer Section======== */
+.footer {
+	background-color: #252529;
+	color: white;
+}
+
+.footer_section_container {
+	/* border: 1px solid red; */
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 2rem;
+}
+
+.footer_section_container-items .item_head {
+	text-align: left;
+	margin: 0;
+	margin-bottom: 1rem;
+	border-bottom: 1px solid #444;
+	padding-bottom: 0.5rem;
+	font-size: 1.92rem;
+}
+
+.footer_section_container-items ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.footer_section_container-items li {
+	color: #ccc;
+	font-size: 1.4rem;
+	width: fit-content;
+	cursor: pointer;
+}
+
+/* ====Footer 2 section */
+footer {
+	background-color: var(--nav_bg_color);
+	padding: 2rem;
+}
+
+footer div {
+	text-align: center;
+	font-size: 1.6rem;
+	color: white;
+}
+
 /* =============Media Query============ */
 @media screen and (max-width: 390px) {
 	section {
@@ -290,6 +338,13 @@ nav {
 
 	.music_section_container button + p {
 		font-size: 1.2rem;
+	}
+}
+
+@media screen and (max-width: 630px) {
+	.footer_section_container {
+		grid-template-columns: repeat(2, 1fr);
+		/* row-gap: 2rem; */
 	}
 }
 
