@@ -209,7 +209,7 @@ nav {
 /* ========Gift Card Section======= */
 .gift_card_container {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(326px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
 	column-gap: 1.5rem;
 	color: var(--nav_bg_color);
 }
@@ -251,7 +251,6 @@ nav {
 }
 
 .footer_section_container {
-	/* border: 1px solid red; */
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	gap: 2rem;
@@ -344,7 +343,6 @@ footer div {
 @media screen and (max-width: 630px) {
 	.footer_section_container {
 		grid-template-columns: repeat(2, 1fr);
-		/* row-gap: 2rem; */
 	}
 }
 
